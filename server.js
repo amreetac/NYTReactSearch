@@ -5,7 +5,7 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 
 //Require History Schema
-var History = require('./models/History.js');
+var Articles = require('./models/articles.js');
 
 // Create Instance of Express
 var app = express();
@@ -47,7 +47,7 @@ app.get('/', function(req, res){
 app.get('/api/', function(req, res) {
 
   // We will find all the records, sort it in descending order, then limit the records to 5
-  History.find({}).sort([['date', 'descending']]).limit(5)
+  Articles.find({}).sort([['date', 'descending']]).limit(5)
     .exec(function(err, doc){
 
       if(err){

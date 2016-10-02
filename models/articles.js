@@ -9,7 +9,7 @@ var ArticlesSchema = new Schema({
   	type: Date,
   },
   url: {
-  	type: String,
+  	type: String
   }
 });
 
