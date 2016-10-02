@@ -122,6 +122,17 @@ var Main = React.createClass({
 						<Results articles={this.state.results} />
 					</div>
 				</div>
+
+
+				<div className="panel panel-default">
+					<div className="panel-heading">
+						<h3 className="panel-title text-center">Saved Articles</h3>
+					</div>
+					<div className="panel-body text-center">
+						
+					</div>
+				</div>
+
 			</div>
 		)
 	}

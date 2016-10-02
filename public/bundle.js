@@ -19921,6 +19921,20 @@
 						{ className: 'panel-body text-center' },
 						React.createElement(Results, { articles: this.state.results })
 					)
+				),
+				React.createElement(
+					'div',
+					{ className: 'panel panel-default' },
+					React.createElement(
+						'div',
+						{ className: 'panel-heading' },
+						React.createElement(
+							'h3',
+							{ className: 'panel-title text-center' },
+							'Saved Articles'
+						)
+					),
+					React.createElement('div', { className: 'panel-body text-center' })
 				)
 			);
 		}
