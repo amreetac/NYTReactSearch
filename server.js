@@ -1,5 +1,6 @@
 // Include Server Dependencies
 var express = require('express');
+var mongoose = require('mongoose');
 var app = express();
 app.use('/', express.static(__dirname + '/public'));
 app.listen(3000, function() {
@@ -7,12 +8,12 @@ app.listen(3000, function() {
 });
 // -------------------------------------------------
 
-// MongoDB Configuration configuration (Change this URL to your own DB)
-mongoose.connect('mongodb://admin:codingrocks@ds023664.mlab.com:23664/reactlocate');
+//MongoDB Configuration configuration (Change this URL to your own DB)
+mongoose.connect('mongodb://localhost/nytreact');
 var db = mongoose.connection;
 
 db.on('error', function (err) {
-  console.log('Mongoose Error: ', err);
+ console.log('Mongoose Error: ', err);
 });
 
 db.once('open', function () {
