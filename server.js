@@ -9,7 +9,7 @@ app.listen(3000, function() {
 // -------------------------------------------------
 
 //MongoDB Configuration configuration (Change this URL to your own DB)
-mongoose.connect('mongodb://localhost/nytreact');
+mongoose.connect('mongodb://heroku_4pc8qb3k:8k44m1kc28s38orll5hnhnu888@ds015780.mlab.com:15780/heroku_4pc8qb3k');
 var db = mongoose.connection;
 
 db.on('error', function (err) {
